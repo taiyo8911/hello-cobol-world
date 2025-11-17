@@ -92,20 +92,12 @@ cobc -x -Wall -debug hello.cob
 - `-debug`: デバッグ情報を含める
 - `hello.cob`: ソースファイル名
 
-## 4. VSCodeで統合開発環境を構築
-
-### VSCodeのインストール
-
-1. [VSCode公式サイト](https://code.visualstudio.com/download)からダウンロード
-2. ダウンロードしたファイルをアプリケーションフォルダに移動
-3. VSCodeを起動
+## 4. VSCodeで開発環境を整備
 
 ### 拡張機能のインストール
-
 VSCodeで以下の拡張機能をインストールします：
 
 #### 1. COBOL拡張機能
-
 1. VSCodeの左サイドバーから「Extensions」（拡張機能）アイコンをクリック
 2. 検索バーに「COBOL」と入力
 3. 「COBOL」という名前の拡張機能を見つけて「Install」をクリック
@@ -113,14 +105,12 @@ VSCodeで以下の拡張機能をインストールします：
 **機能**: COBOLのシンタックスハイライト（構文の色付け）を提供します。
 
 #### 2. Save and Run拡張機能
-
 1. 検索バーに「Save and Run」と入力
 2. 「Save and Run」をインストール
 
 **機能**: ファイル保存時に自動的にコンパイル・実行を行います。
 
-### Save and Runの設定
-
+#### 3. Save and Runの設定
 1. インストールした「Save and Run」の歯車アイコンをクリック
 2. 「Extension Settings」を選択
 3. 「Edit in settings.json」をクリック
@@ -143,9 +133,8 @@ VSCodeで以下の拡張機能をインストールします：
 6. **VSCodeを再起動**（重要：再起動しないと設定が反映されません）
 
 ### 実行方法
-
 1. `hello.cob`をVSCodeで開く
-2. `Command + Shift + R`（macOS）または`Ctrl + Shift + R`（Windows/Linux）を押す
+2. `Command + Shift + R`を押す
 3. 統合ターミナルが開き、自動的にコンパイル・実行されます
 4. エラーがなければ、以下のように出力されます：
 
@@ -156,18 +145,14 @@ VSCodeで以下の拡張機能をインストールします：
 ## トラブルシューティング
 
 ### よくあるエラー
-
 #### 1. コンパイルエラー：行頭の空白がない
-
 **エラーメッセージ例:**
 ```
 error: syntax error, unexpected IDENTIFICATION
 ```
 
 **解決方法:** 各行の先頭に7つの空白を追加してください。
-
 #### 2. ファイルが実行できない
-
 **エラーメッセージ例:**
 ```
 Permission denied
@@ -179,27 +164,9 @@ chmod +x hello
 ```
 
 #### 3. Save and Runが動作しない
-
 **解決方法:**
 - VSCodeを再起動してください
 - settings.jsonの記述が正しいか確認してください
 - ショートカットキー（Command + Shift + R）を正しく押しているか確認してください
 
-## まとめ
-
-このマニュアルでは、以下の内容を学びました：
-
-1. ✅ COBOLコンパイラのインストール
-2. ✅ Hello Worldプログラムの作成と実行
-3. ✅ VSCodeでの開発環境構築
-4. ✅ 自動コンパイル・実行の設定
-
-これで、COBOLプログラミングを始める準備が整いました！
-
-## 次のステップ
-
-- COBOLの基本文法を学ぶ
-- データ処理プログラムを作成する
-- ファイル入出力を扱う
-
-Happy COBOL Programming! 🎉
+Happy COBOL Programming!
