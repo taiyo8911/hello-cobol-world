@@ -1,0 +1,8 @@
+       IDENTIFICATION  DIVISION.
+       PROGRAM-ID.     HELLO_WORLD.
+       DATA            DIVISION.
+       WORKING-STORAGE SECTION.
+       01  NAME-VAR    PIC X(10) VALUE "taiyo".
+       PROCEDURE       DIVISION.
+          DISPLAY  "HELLO " NAME-VAR
+          STOP RUN.
